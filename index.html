@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Pre-filled Email</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f3f6fb;color:#202938}
+main{max-width:760px;margin:48px auto;padding:24px}
+.card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 8px 28px rgba(20,35,60,.08)}
+h1{font-size:26px;margin:0 0 12px}
+p{line-height:1.55;color:#4b5563}
+button{border:0;border-radius:9px;background:#175cd3;color:white;font-size:17px;font-weight:700;padding:15px 22px;cursor:pointer}
+.details{background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:14px;font-size:14px;overflow-wrap:anywhere}
+.note{font-size:13px;margin-top:18px}
+</style>
+</head>
+<body><main><section class="card">
+<h1>Request not to take cognizance of E-Mails of few disgruntled Home Buyers to replace RP</h1>
+<p>Click below to open an email with the recipients, CC, subject, and letter pre-filled. Please review it and add your name and Zest flat number before sending.</p>
+<button id="openEmail" type="button">✉ Open Pre-filled Email</button>
+<p class="note">This prepares the email only; it will not send automatically. Some email apps may limit very long email links.</p>
+<div class="details"><strong>To:</strong><br>arlogixcity@gmail.com, cmaashokgupt@gmail.com, cmaashokgupta@gmail.com<br><br>
+<strong>CC:</strong><br>cirp.logixcity@gmail.com, mlvij1956@gmail.com, logixbuyersassociation@gmail.com<br><br>
+<strong>Subject:</strong><br>Request not to take cognizance of E- Mails of few disgruntled Home Buyers to replace RP</div>
+</section></main>
+<script>
+const recipients = "arlogixcity@gmail.com,cmaashokgupt@gmail.com,cmaashokgupta@gmail.com";
+const cc = "cirp.logixcity@gmail.com,mlvij1956@gmail.com,logixbuyersassociation@gmail.com";
+const subject = "Request not to take cognizance of E- Mails of few disgruntled Home Buyers to replace RP";
+const body = "Sh. Ashok Kumar Gupta\nAR of Logix City Developers Private Ltd\n\nDear Sir,\n\nI understand that few disgruntled Home Buyers are sending you Emails to facilitate replacement of existing Resolution Professional. In this connection, I humbly submit as under:\n\na) Case of Zest Resolution Plan Approval in NCLT is on fast track as evident from Eight Hearing Dates given by Court in less than 2 months period (Hearing dates of 1st September 2026, 2nd September, 3rd September, 7th September, 22nd September, 29th September, 06th October & upcoming 27th October 2026).\n\nb) After the recent 2nd personal meeting of Zest Home Buyers with Registrar of NCLT and request to the Bench, Hon’ble NCLT has once again agreed to expedite process of Zest Resolution Plan submitted by M/s Gepdec Infratech Limited on urgent basis.\n\nNext date of hearing is 27th October 2026. Any change in RP, at this crucial stage, would jeopardize CIRP of Zest and would delay Resolution Plan approval.\n\nc) As per my understanding, there is no serious complaint against the present RP.\n\nAfter the approval of Resolution Plan by COC and submitting the same to Hon’ble NCLT, role of RP remains confined to only follow up the matter with the Advocate(s) and other agencies (including for statutory compliances) only.\n\nd) As per my understanding, same disgruntled Home Buyers earlier also sent you Emails for replacement of RP and taking cognizance of the same, you arranged E voting from Home Buyers but said agenda did not get requisite majority.\n\nAR role in CIRP is limited to only guiding and helping Home Buyers in understanding COC Agenda / Resolutions / IM etc, and facilitate.\n\nAR cannot resort to any activity which harm CIRP or facilitate furtherance of vested interest of few home buyers. He can accept forwarding of any proposal, if received, for change of RP from Home Buyers but it should have requisite majority in terms CIRP Regulation 18(2).\n\nAR cannot take action, again & again on the very same request without first ascertaining that concerned Home Buyers have requisite majority.\n\nIn view of the above, I request you to kindly do not take cognizance of E-mails of few buyers and do not take any action which may jeopardize CIRP of Logix City Developers Private Ltd.\n\nThanking you\n\nYours Sincerely\n\nName\nZest Flat No.";
+document.getElementById('openEmail').addEventListener('click', function(){
+  const url = 'mailto:' + recipients + '?cc=' + encodeURIComponent(cc) +
+    '&subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  window.location.href = url;
+});
+</script></body></html>
